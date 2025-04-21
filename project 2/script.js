@@ -59,4 +59,5 @@ function addfavColor (color){
     const colorBox = document.createElement('div');
     colorBox.classList.add('color-box');
     colorBox.style.backgroundColor = color;
+    favoritesContainer.appendChild(colorBox);
 }

@@ -1,0 +1,112 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Headings */
+.container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Inputs & Buttons */
+#colorInput {
+  width: 100%;
+  height: 50px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#colorCode {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  text-align: center;
+  background: #eaeaea;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Complementary & Favorites Sections */
+#ComplementaryContainer,
+#favoritesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#ComplementaryContainer div,
+#favoritesContainer div {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#ComplementaryContainer div:hover,
+#favoritesContainer div:hover {
+  transform: scale(1.1);
+}
+
+
+.color-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    cursor:pointer;
+    
+}

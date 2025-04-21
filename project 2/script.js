@@ -45,3 +45,18 @@ copyButton.addEventListener('click',()=>{
     .then(() => alert('Color code copied') )
     .catch((err) => console.error('failed to copy', err) )
 })
+
+
+saveColorButton.addEventListener('click', () => {
+
+    const color = colorCode.textContent;
+    addfavColor(color)
+
+})
+
+function addfavColor (color){
+  
+    const colorBox = document.createElement('div');
+    colorBox.classList.add('color-box');
+    colorBox.style.backgroundColor = color;
+}
